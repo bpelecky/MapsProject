@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Viajarse En Espana</title>
+	<link rel="stylesheet" href="yeet.css"/>
+</head>
+<body>
+
+<h1>Una Mapa De Espana</h1>
+
+<div id="map" style=map></div>
+
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(40.4112532, -3.6973222),
+        zoom: 16.75,
+        mapTypeId: google.maps.MapTypeId.roadmap
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCag5r0bq5xYA31elZkz5zgYCFfJL6yN9s&callback=myMap"></script>
+</body>
+</html>
